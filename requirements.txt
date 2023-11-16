@@ -1,3 +1,4 @@
+tensorflow
 transformers==4.30
 Flask==2.0.3
 flask-appbuilder==4.3.9
