@@ -12,6 +12,7 @@ jobs:
     - name: Install dependencies
       run: |
         make install
+        pip install -r requirements.txt
     - name: Lint with Pylint
       run: |
         make lint
@@ -22,4 +23,3 @@ jobs:
       run: |
         make format
 
-        
