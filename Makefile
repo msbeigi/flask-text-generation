@@ -9,8 +9,8 @@ test:
 	python -m pytest -vv --cov=app test_app.py
 
 format:
-	black .
-	
+	black *.py
+
 all: install lint test format
 
 
