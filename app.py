@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 @app.route("/", methods=["GET", "POST"])
-def random_word_text_generation(word: str):
+def random_word_text_generation():
     if request.method == "POST":
         word = request.form.get("word")
         text_generator = pipeline("text-generation", device=-1)
