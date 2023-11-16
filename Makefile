@@ -8,7 +8,8 @@ lint:
 test:
 	python -m pytest -vv --cov=app test_app.py
 
-
+format:
+	black .
 all: install lint test format
 
 
