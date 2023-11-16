@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random word for text generation</title>
+</head>
+<body>
+    <h1>This web application generates text based on your random word</h1>
+    <form method="post" action="/">
+        <label for="word">Enter a word:</label>
+        <input type="text" id="word" name="word" required>
+        <input type="submit" value="Generate Text">
+    </form>
+    {% if content %}
+        <h3>Content: {{ content }}</h3>
+    {% endif %}
+</body>
+</html>
